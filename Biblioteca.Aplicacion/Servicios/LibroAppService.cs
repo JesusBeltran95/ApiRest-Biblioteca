@@ -27,6 +27,13 @@ namespace Biblioteca.Aplicacion.Servicios
                 {
                     LibroDto dto = new LibroDto();
                     dto.IdLibro = entidad.Id;
+                    dto.Portada = entidad.Portada;
+                    dto.Titulo = entidad.Titulo;
+                    dto.Editorial = entidad.Editorial;
+                    dto.Autor = entidad.Autor;
+                    dto.AnioEdicion = entidad.AnioEdicion;
+                    dto.Precio = entidad.Precio;
+                    dto.FkGenero = entidad.FkGenero;
                 }
                 return librodtos;
             }
@@ -45,6 +52,13 @@ namespace Biblioteca.Aplicacion.Servicios
 
                     LibroDto dto = new LibroDto();
                     dto.IdLibro = entidad.Id;
+                    dto.Portada = entidad.Portada;
+                    dto.Titulo = entidad.Titulo;
+                    dto.Editorial = entidad.Editorial;
+                    dto.Autor = entidad.Autor;
+                    dto.AnioEdicion = entidad.AnioEdicion;
+                    dto.Precio = entidad.Precio;
+                    dto.FkGenero = entidad.FkGenero;
                 return dto;
             }
             catch (Exception)
